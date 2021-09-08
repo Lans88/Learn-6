@@ -1,0 +1,29 @@
+/*dropFirst и dropLast возвращают новый массив, в котором
+отсутствуют первые или последние несколько элементов, 
+при этом не изменяющие исх. коллекцию*/
+var numArray = [1, 2, 3, 4, 5]
+//удаляем последний элемент
+numArray.dropLast() // [1, 2, 3, 4]
+//Удаляем первые 3 элемента
+let anotherArray = numArray.dropFirst(3)
+numArray // [4, 5]
+//contains() определяет факт наличия элемента в массиве и возвращает булево значение
+numArray.contains(10) // false
+// поиск минимального и максимального значенния в массиве
+let randomArray = [1, 10, 2, 5, 23, 3, 9, 99]
+randomArray.min() // 1
+randomArray.max() // 99
+//Изменение порядка элементов в массиве на противоположный
+randomArray.reverse()
+//Сортировка элементов по возрастанию
+//Исходный неотсортированный массив
+var unsortedArray = [10, 40, 50, 20, 30]
+//метод sorted() возвращает отсортированную последовательность
+//исходный массив не меняется? возвращается измененная копия
+let sortedArray = unsortedArray.sorted()
+print (unsortedArray)
+print (sortedArray)
+//метод sort() изменяет исходный массив
+unsortedArray.sort()
+//randomElement() позволяет получить рандомный элемент массива
+let randomElementArray = unsortedArray.randomElement()
