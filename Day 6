@@ -36,3 +36,21 @@ print(someArray)
 var minValue = someArray.first
 print(minValue)
 
+//Задача: Дан массив из 10 целых чисел. Найти произведение положительных. А также сумму и количество отрицательных чисел.
+//Решение:
+var someArray = [-4, -1, 5, 3, 4, -2, 7, 9, -6, -9]
+someArray.sort()
+print(someArray)
+
+//Вычисляем произведение положительных
+var multiPly = someArray[5] * someArray[6] * someArray[7] * someArray[8] * someArray[9]
+print(multiPly)
+
+//Создаем массив из отрицательных чисел
+var numArray = someArray.dropLast(5)
+
+//Смотрим количество элементов
+print(numArray.count)
+//Вычисляем сумму
+var sumArray = numArray[0] + numArray[1] + numArray[2] + numArray[3] + numArray[4]
+print(sumArray)
