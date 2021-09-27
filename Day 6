@@ -27,3 +27,12 @@ print (sortedArray)
 unsortedArray.sort()
 //randomElement() позволяет получить рандомный элемент массива
 let randomElementArray = unsortedArray.randomElement()
+
+
+//Решение задачи: Из N целых числел, записанных в массиве найти минимальное значение
+var someArray = [2, 36, 1, 40, 5, 69, 21, 88, 7, 3, 52]
+someArray.sort()
+print(someArray)
+var minValue = someArray.first
+print(minValue)
+
